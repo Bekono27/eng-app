@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>English Learning Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-gradient-to-r from-purple-700 via-indigo-800 to-blue-900 min-h-screen text-white flex flex-col">
+  <!-- Header -->
+  <header class="flex items-center justify-between p-5 bg-black/20 backdrop-blur-md shadow-md">
+    <h1 class="text-3xl font-extrabold uppercase tracking-widest">English Master</h1>
+    <button
+      id="logoutBtn"
+      class="bg-red-600 px-4 py-2 rounded-md font-semibold hover:bg-red-700 transition"
+      title="Logout"
+    >
+      Logout
+    </button>
+  </header>
+
+  <!-- User Info + Progress -->
+  <section class="p-5 bg-black/30 backdrop-blur-sm flex flex-col space-y-3">
+    <p class="text-lg font-semibold">Welcome, <span id="userName">User</span>!</p>
+    <p>Your current level: <span id="userLevel" class="font-bold"></span></p>
+    
+    <div class="w-full bg-gray-700 rounded-full h-5 overflow-hidden">
+      <div id="progressBar" class="bg-purple-600 h-full transition-all"></div>
+    </div>
+    <p id="progressText" class="text-sm mt-1"></p>
+
+    <p class="text-yellow-400 font-semibold" id="streakDisplay">🔥 Current streak: 0 days</p>
+  </section>
+
+  <!-- Navigation Tabs -->
+  <nav class="bg-black/20 backdrop-blur-md flex justify-around p-3 mt-2 rounded-md shadow-inner sticky top-0 z-10">
+    <button class="nav-btn active" data-tab="words">Words</button>
+    <button class="nav-btn" data-tab="grammar">Grammar</button>
+    <button class="nav-btn" data-tab="reading">Reading</button>
+    <button class="nav-btn" data-tab="listening">Listening</button>
+    <button class="nav-btn" data-tab="writing">Writing</button>
+  </nav>
+
+  <!-- Main Content Area -->
+  <main id="mainContent" class="flex-grow overflow-auto p-5 space-y-6">
+    <!-- Content will load here dynamically -->
+  </main>
+
+  <script src="dashboard.js"></script>
+  <footer class="bg-black/20 backdrop-blur-md text-center py-4 mt-8 text-gray-400 text-sm select-none">
+  © 2025 Owned by <span class="font-bold text-purple-500">BeckTheHunter</span>. All rights reserved.
+</footer>
+
+</body>
+</html>

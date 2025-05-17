@@ -1,0 +1,32 @@
+/* Just some extra polish */
+body::-webkit-scrollbar {
+  width: 6px;
+}
+body::-webkit-scrollbar-thumb {
+  background: rgba(255 255 255 / 0.3);
+  border-radius: 20px;
+}
+body::-webkit-scrollbar-track {
+  background: transparent;
+}
+.nav-btn {
+  @apply text-white font-semibold py-2 px-4 rounded-md hover:bg-purple-600 transition;
+}
+
+.nav-btn.active {
+  @apply bg-purple-700 shadow-lg;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1; /* This pushes footer down */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

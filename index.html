@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>English Learning App - Login</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-gradient-to-r from-purple-700 via-indigo-800 to-blue-900 min-h-screen flex items-center justify-center">
+  <main class="w-full max-w-md p-8 bg-white/10 backdrop-blur-md rounded-xl shadow-lg text-white">
+    <h1 class="text-4xl font-extrabold mb-8 text-center tracking-wide uppercase">ENGLISH MASTER</h1>
+    
+    <form id="login-form" class="flex flex-col gap-6">
+      <input
+        type="text"
+        id="username"
+        placeholder="Username"
+        required
+        autocomplete="off"
+        class="p-3 rounded-md bg-white/20 placeholder-white text-white focus:outline-none focus:ring-2 focus:ring-purple-500"
+      />
+      <input
+        type="password"
+        id="password"
+        placeholder="Password"
+        required
+        autocomplete="off"
+        class="p-3 rounded-md bg-white/20 placeholder-white text-white focus:outline-none focus:ring-2 focus:ring-purple-500"
+      />
+      <button
+        type="submit"
+        class="bg-purple-600 hover:bg-purple-700 transition rounded-md py-3 font-bold tracking-wide text-lg"
+      >
+        Login
+      </button>
+    </form>
+
+    <p id="login-error" class="mt-4 text-red-400 text-center hidden"></p>
+  </main>
+
+  <script src="app.js"></script>
+ <footer class="bg-black/20 backdrop-blur-md text-center py-4 mt-8 text-gray-400 text-sm select-none">
+  © 2025 Owned by <span class="font-bold text-purple-500">BeckTheHunter</span>. All rights reserved.
+</footer>
+
+</body>
+</html>
