@@ -16,7 +16,14 @@ body::-webkit-scrollbar-track {
 .nav-btn.active {
   @apply bg-purple-700 shadow-lg;
 }
-
+footer {
+  user-select: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+footer {
+  user-select: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 body, html {
   height: 100%;
   margin: 0;
