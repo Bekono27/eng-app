@@ -24,16 +24,3 @@ footer {
   user-select: none;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-body, html {
-  height: 100%;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-}
-
-main {
-  flex: 1; /* This pushes footer down */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
